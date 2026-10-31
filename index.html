@@ -1,29 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Mut ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pantun Semangat Kerja ❤️</title>
 
 <style>
-body{
-    background:#0d1117;
-    color:#58a6ff;
-    font-family:monospace;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    margin:0;
+body {
+  background: #0d1117;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
 }
-.box{
-    border:2px solid #58a6ff;
-    padding:30px;
-    border-radius:15px;
-    max-width:700px;
+
+.box {
+  border: 2px solid #f58ab6;
+  border-radius: 20px;
+  padding: 30px 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 25px #f58ab655;
 }
-h1{
-    color:#ff6b81;
-    text-align:center;
+
+h1 {
+  color: #ff8fbd;
+}
+
+.pantun {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 25px 0;
+}
+
+button {
+  background: #f58ab6;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e85c98;
+}
+
+.footer {
+  color: #aaa;
+  font-size: 13px;
+  margin-top: 25px;
 }
 </style>
 </head>
@@ -31,37 +65,66 @@ h1{
 <body>
 
 <div class="box">
-<h1>Loading My Heart... ❤️</h1>
+  <h1>🌸 Semangat Kerja! 🌸</h1>
 
-<p>> Initializing...</p>
-<p>> Searching happiness...</p>
-<p>> Result found: <b>Mut</b></p>
-<br>
+  <p>Untuk kamu yang sedang berjuang hari ini ❤️</p>
 
-<p>if (day == "Monday") { think = "Mut"; }</p>
-<p>if (day == "Tuesday") { think = "Mut"; }</p>
-<p>if (day == "Wednesday") { think = "Mut"; }</p>
-<p>if (day == "Thursday") { think = "Mut"; }</p>
-<p>if (day == "Friday") { think = "Mut"; }</p>
-<p>if (day == "Saturday") { think = "Mut"; }</p>
-<p>if (day == "Sunday") { think = "Mut"; }</p>
+  <div class="pantun" id="pantun">
+    Pergi ke pasar membeli jamu,<br>
+    Pulangnya mampir membeli ketan.<br>
+    Tetap semangat wahai dirimu,<br>
+    Kerja yang ikhlas membawa keberuntungan.
+  </div>
 
-<br>
+  <button onclick="gantiPantun()">
+    Pantun Berikutnya 💌
+  </button>
 
-<p>while (heart.beats()) {</p>
-<p>&nbsp;&nbsp;love = "Mut";</p>
-<p>}</p>
-
-<br>
-
-<p><b>Output:</b></p>
-<p>Tiap hari isinya Mut.</p>
-<p>Bangun tidur Mut.</p>
-<p>Kerja ingat Mut.</p>
-<p>Mau tidur juga Mut.</p>
-<p>Error 404: Tidak bisa berhenti mikirin Mut. ❤️</p>
-
+  <div class="footer">
+    Jangan lupa tersenyum dan jangan menyerah! ❤️
+  </div>
 </div>
+
+<script>
+const pantun = [
+`Pergi ke pasar membeli jamu,<br>
+Jangan lupa membeli roti.<br>
+Semangat kerja untuk dirimu,<br>
+Semoga sukses menyertai hari ini.`,
+
+`Burung merpati terbang ke awan,<br>
+Hinggap sebentar di atas dahan.<br>
+Jangan menyerah dalam pekerjaan,<br>
+Hasil terbaik datang dari ketekunan.`,
+
+`Pagi hari memetik melati,<br>
+Melihat kupu-kupu menari.<br>
+Tetap semangat sepenuh hati,<br>
+Semoga lancar pekerjaan hari ini.`,
+
+`Jalan-jalan ke Kota Blitar,<br>
+Jangan lupa membeli sukun.<br>
+Walau pekerjaan datang berputar,<br>
+Tetap tersenyum dan jangan melamun.`,
+
+`Beli mangga di pinggir jalan,<br>
+Mangga manis rasanya legit.<br>
+Tetap fokus dalam pekerjaan,<br>
+Semoga rezekimu semakin melimpah dan berkah.`,
+
+`Bunga mawar bunga selasih,<br>
+Tumbuh indah di tepi taman.<br>
+Kerja keras jangan bersedih,<br>
+Setiap usaha punya masa depan.`
+];
+
+let index = 0;
+
+function gantiPantun() {
+  index = (index + 1) % pantun.length;
+  document.getElementById("pantun").innerHTML = pantun[index];
+}
+</script>
 
 </body>
 </html>
