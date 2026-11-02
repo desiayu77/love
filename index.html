@@ -62,69 +62,67 @@ button:hover {
 </style>
 </head>
 
+
 <body>
 
 <div class="box">
-  <h1>🌸 Semangat Kerja! 🌸</h1>
+  <h1>☀️ Morning Sunshine!</h1>
 
-  <p>Untuk kamu yang sedang berjuang hari ini ❤️</p>
+  <p>Good morning, beautiful soul ❤️</p>
 
   <div class="pantun" id="pantun">
-    Pergi ke pasar membeli jamu,<br>
-    Pulangnya mampir membeli ketan.<br>
-    Tetap semangat wahai dirimu,<br>
-    Kerja yang ikhlas membawa keberuntungan.
+    Wake up and shine! ☀️<br><br>
+    A new day, a new chance.<br>
+    Keep smiling, keep going.<br>
+    Believe in yourself.<br><br>
+    Have a great day at work! 💪❤️
   </div>
 
-  <button onclick="gantiPantun()">
-    Pantun Berikutnya 💌
+  <button onclick="gantiPesan()">
+    Click for a Smile 💌
   </button>
 
   <div class="footer">
-    Jangan lupa tersenyum dan jangan menyerah! ❤️
+    You can do amazing things.<br>
+    Stay happy and keep shining! ❤️
   </div>
 </div>
 
 <script>
-const pantun = [
-`Pergi ke pasar membeli jamu,<br>
-Jangan lupa membeli roti.<br>
-Semangat kerja untuk dirimu,<br>
-Semoga sukses menyertai hari ini.`,
+const pesan = [
+`Take a deep breath. 🌸<br><br>
+Forget yesterday's worries.<br>
+Focus on today's opportunities.<br>
+Do your best and enjoy the journey.<br><br>
+Happy working! ❤️`,
 
-`Burung merpati terbang ke awan,<br>
-Hinggap sebentar di atas dahan.<br>
-Jangan menyerah dalam pekerjaan,<br>
-Hasil terbaik datang dari ketekunan.`,
+`Good morning, sunshine! ☀️<br><br>
+May your coffee be strong,<br>
+your work be easy,<br>
+and your day be wonderful.<br><br>
+You got this! 💪`,
 
-`Pagi hari memetik melati,<br>
-Melihat kupu-kupu menari.<br>
-Tetap semangat sepenuh hati,<br>
-Semoga lancar pekerjaan hari ini.`,
+`One step at a time.<br><br>
+Don't rush, don't give up.<br>
+Your hard work will pay off.<br>
+Keep believing in yourself.<br><br>
+Have a lovely day! ❤️`,
 
-`Jalan-jalan ke Kota Blitar,<br>
-Jangan lupa membeli sukun.<br>
-Walau pekerjaan datang berputar,<br>
-Tetap tersenyum dan jangan melamun.`,
-
-`Beli mangga di pinggir jalan,<br>
-Mangga manis rasanya legit.<br>
-Tetap fokus dalam pekerjaan,<br>
-Semoga rezekimu semakin melimpah dan berkah.`,
-
-`Bunga mawar bunga selasih,<br>
-Tumbuh indah di tepi taman.<br>
-Kerja keras jangan bersedih,<br>
-Setiap usaha punya masa depan.`
+`Smile a little more. 😊<br><br>
+Work hard, stay positive,<br>
+and don't forget to be happy.<br><br>
+Sending you positive energy! 💕`
 ];
 
 let index = 0;
 
-function gantiPantun() {
-  index = (index + 1) % pantun.length;
-  document.getElementById("pantun").innerHTML = pantun[index];
+function gantiPesan() {
+  index = (index + 1) % pesan.length;
+  document.getElementById("pantun").innerHTML = pesan[index];
 }
 </script>
+
+
 
 </body>
 </html>
